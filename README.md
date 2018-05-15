@@ -26,11 +26,11 @@ This library is pretty simple in usage.
 
 #### Example 1 : With Blurred image padding
 
-`$input = "plant.jpg";`
-`$output = "BlurredImagePadding.jpg";`
-`$new = new PicScale($input);`
-`$new->resize($width = 450, $height = 450);`
-`$new->output($output);`
+`$input = "plant.jpg";`  
+`$output = "BlurredImagePadding.jpg";`  
+`$new = new PicScale($input);`  
+`$new->resize($width = 450, $height = 450);`  
+`$new->output($output);`  
 
 Input Image:  
 
@@ -42,24 +42,26 @@ Output Image:
 
 
 #### Example 2 : With White Space padding
-`$new = new PicScale($input);`  
-`$new->options("colorpadding", true);`  
-`$new->resize($width = 600, $height = 450);`  
-`$new->output($output);`  
+`$input = "plant.jpg";`   
+`$output = "WhiteSpacePadding.jpg";`   
+`$new = new PicScale($input);`   
+`$new->options("colorpadding", true);`   
+`$new->resize($width = 450, $height = 450);`   
+`$new->output($output);`   
 
 Input Image:  
 
-![](https://s21.postimg.org/j3khle79z/nature.jpg)
+![](https://preview.ibb.co/ktGPdy/plant.jpg)
 
 Output Image:
 
-![](https://s22.postimg.org/axq7whz8h/nature1.jpg)
+![](https://image.ibb.co/hhtZBJ/White_Space_Padding.jpg)
 
 #### Example 3 : With Colored(any) padding 
 
 If you want to put any color in the padding area
 
-`$new = new PicScale($input);`  
+`$new = new PicScale($input);`
 `$new->options("colorpadding", true);`  
 `$new->resize($width = 600, $height = 450);`  
 `$new->options("paddingcolor", array(149,213,50));`  
